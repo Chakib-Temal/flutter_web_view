@@ -11,6 +11,7 @@ import android.net.http.SslError;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
@@ -57,6 +58,8 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
 
             @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+              System.out.println("chaaaaaakib");
+              Log.i("TAG", "chakiiiiiiiiiiib");
               handler.proceed();
             }
 
