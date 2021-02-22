@@ -57,13 +57,6 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
             }
 
             @Override
-            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
-              System.out.println("chaaaaaakib");
-              Log.i("TAG", "chakiiiiiiiiiiib");
-              handler.proceed();
-            }
-
-            @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
               if (!flutterWebViewClient.shouldOverrideUrlLoading(
                   FlutterWebView.this.webView, url)) {
